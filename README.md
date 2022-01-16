@@ -4,4 +4,5 @@
     * Apache Server == 2.4.48 ：    SSRF漏洞                     CVE-2021-40438
     * Apache Server 2.4.0~2.4.29 ： 换行解析漏洞                  CVE-2021-40438
     * Apache Server == 2.4.50 ：    路径穿越漏洞                  CVE-2021-42013
+    * Apache Server 任意版本：       文件上传后缀解析漏洞
 
